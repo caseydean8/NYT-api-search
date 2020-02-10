@@ -36,7 +36,7 @@ const articleDisplay = (results, resultNum) => {
   document.getElementById("form").style.display = "none";
   if (resultNum) results.length = resultNum;
   results.forEach(result => {
-    const card = $("<div>").addClass("card");
+    const card = $("<button>").addClass("card");
     $(card).text(result.headline.main);
     $(card).val(result.web_url);
     $("#card-holder").append(card);
