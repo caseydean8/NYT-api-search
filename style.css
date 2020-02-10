@@ -1,3 +1,8 @@
+html,
+body {
+  width: auto !important;
+  overflow-x: hidden !important;
+}
 
 .parent {
   display: grid;
@@ -61,8 +66,11 @@ h2 {
   grid-area: main;
 }
 
+form {
+  margin: 1em 15%;
+}
+
 input {
-  display: block;
   font-family: "Crimson Text", serif;
   color: #393737;
   width: 96%;
@@ -71,10 +79,6 @@ input {
   font-size: 1em;
   border: solid 1px #393737;
   border-radius: 0.5em;
-}
-
-form {
-  margin: 1em 15%;
 }
 
 button {
@@ -95,7 +99,7 @@ button {
 }
 
 .card {
-  width: 96%;
+  width: 92%;
   font-size: 1.8em;
   margin: 0.5em;
   padding: 0.5em;
@@ -130,10 +134,15 @@ button:hover {
 @media only screen and (max-width: 1024px) {
   .parent {
     grid-template-rows: 1fr 6fr 0.5fr;
-
   }
+
   form {
     margin: 1em 0;
+  }
+
+  #start,
+  #end {
+    display: block;
   }
 }
 
@@ -172,7 +181,7 @@ button:hover {
   }
 
   input {
-    width: 94%;
+    width: 90%;
   }
 
   .card {
